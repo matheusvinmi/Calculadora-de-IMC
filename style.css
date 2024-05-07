@@ -125,17 +125,15 @@ input[type="number"]::-webkit-outer-spin-button {            /*código css usado
     }
     .text {
         text-align: left;
+        color: #ffffff;
     }
     .fimtext{
         text-align: left;
+        color: #ffffff;
     }
 
 
     a{                     /*persolazição do link para o vídeo esplicativo*/
         text-decoration: none;
         color: #007bff;
-    }
-
-    p{
-        color: #ffffff;
     }
