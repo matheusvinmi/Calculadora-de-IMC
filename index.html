@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Calculadora de IMC</title> <!--abaixo link para figuras inserida na página-->
+    <link rel="stylesheet"     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  </head>
+<body>
+
+    <div class="text">
+        <h2>O que é o IMC?</h2>
+            <p>O IMC (Índice de Massa Corporal ) é uma medida utilizada para avaliar se uma pessoa está dentro de um peso considerado saudável em relação à sua altura. Esta ferramenta é amplamente utilizada na área da saúde para determinar se alguém está dentro de faixas de peso consideradas saudáveis, abaixo do peso, com excesso de peso ou obesidade.</p>
+            <p>A fórmula para calcular o IMC é simples: divide-se o peso (em quilogramas) pela altura (em metros) ao quadrado. Matematicamente, é expresso como:</p>
+            <p>IMC = peso / (altura * altura)</p>
+            <p>Podemos obter o índice com a calculadora feita abaixo, então podemos ter informações sobre outros índices com uma tabela de referência no qual ela se encontra mais ao lado.</p>
+        </div>
+        
+        <div class="TabelaIMC">     <!--Tabela do imc-->
+                <table border="2">
+                    <thead>
+                      <tr>
+                        <th>IMC(kg)</th>
+                        <th>Classificação</th>
+                        <th>Grau</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr id="Abaixo do normal">
+                        <th>Abaixo de 18.5</th> <!--Nivel-->
+                        <th>Abaixo do normal</th> <!--classificação-->
+                        <th>0</th>      <!--Grau-->
+                      </tr>
+                      <tr id="normal">
+                        <th>Entre 18.5 e 24.9</th> 
+                        <th>normal</th> <!--classificação-->
+                        <th>0</th>           <!--Grau-->
+                      </tr>
+                      <tr id="sobre peso">
+                        <th>Entre 25 e 29.9</th>  <!--Nivel--> 
+                        <th>sobre peso</th>  <!--classificação-->
+                        <th>I</th>      <!--Grau-->
+                      </tr>
+                      <tr id="obesidade grau 1">  
+                        <th>Entre 30 e 34.9</th>       <!--Nivel-->
+                        <th>obesidade</th>      <!--classificação-->
+                        <th>II</th>       <!--Grau-->
+                      </tr>
+                      <tr id="obesidade grau 2">   
+                        <th>Entre 35 e 43,9</th>    <!--Nivel-->
+                        <th>obesidade</th> <!--classificação-->
+                        <th>III</th>       <!--Grau-->
+                      </tr>
+                      <!-- Adicione mais linhas conforme necessário para as outras classificações -->
+                    </tbody>
+                  </table>
+                </div>
+            
+                <div class="container">   <!--div para centralizar a calc de uma melhor forma-->
+                  <main>   <!--Div para conteudo principal do site-->
+                      <h2>Calculadora de IMC</h2>
+                      <div class="inputs">
+                      <div class="DivAltura">       <!--div para a informação altura-->
+                          <span>
+                              Altura
+                              <i class="fa-solid fa-ruler-vertical"></i>
+                          </span>
+                          <input type="number"   placeholder="Metros"    id="altura"  />
+                      </div>
+              
+              
+                      <div class="DivPeso">                      <!--div para a informação peso-->
+                          <span>Peso</span>
+                          <i class="fa-solid fa-weight-hanging"></i>
+                          <input type="number"  placeholder="Quilos"                   id="peso"  />
+                      </div>
+                  </div>
+              
+                  
+                  <div class="botoesconter">                <!--div para os botões da pagina-->
+              
+                      <div class="calcularoIMC">        <!--botçao calcular-->
+                          <button onclick="calcular()">Calcular o IMC</button>
+                      </div>
+              
+                     
+                      <div class="limparIMC">         <!--botçao limpar-->
+                          <button onclick="limparImc()">Limpar</button>
+                      </div>
+                  </div>
+                  <div class="resultado">
+                      <h4 id="resultado"></h4>  
+                  </div>     
+              
+                      <a href="https://youtu.be/PzvgUViYHPQ?si=6PfRjxPB_iAnT5r9"> <!--link para video com mais explicações sobre imc-->
+              
+                          Clique para mais informação sobre IMC 
+                          <i class="fa-solid fa-arrow-up-right-from-square"></i>     <!--link da figura seta em janela-->
+                      </a>
+                    </main>
+
+            <div class="fimtext">
+            <p>Essas categorias fornecem uma indicação geral do estado de saúde de uma pessoa em relação ao seu peso e altura. No entanto, é importante observar que o IMC é uma ferramenta de triagem e não leva em consideração a composição corporal total, como a proporção de massa muscular versus gordura corporal.</p>
+            <p>Portanto, embora o IMC seja útil como um indicador inicial, outros fatores, como a distribuição de gordura corporal e a saúde geral, também devem ser considerados ao avaliar o risco para a saúde associado ao peso de uma pessoa.</p>
+        </div>
+
+    <script src="main.js"></script>          <!--tag para comunicação front com back da página-->
+</div>
+</body>
+</html>

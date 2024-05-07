@@ -1,0 +1,141 @@
+html, body{
+    background-color: #f0f0f0;
+    text-align: center;
+    justify-content: center;
+}
+h2{
+    text-align: center;
+}
+.container {
+    display: flex;
+    justify-content: space-between;       /*css para  ajudar a posicionar a calculadora*/
+    flex-wrap: wrap;
+}
+main{
+    background-color: #f5f5f5;
+    padding: 20px;   /*espaçamento entre calc e a borda do site*/
+    border-radius: 10px;   /*curva da borda*/
+   float: left;   /*posição*/
+   margin-right: 5%;
+}
+
+h2{
+    color:#4caf50;;
+}
+
+div.botoesconter{           /*css para definir o espaço entre os botões*/
+    display: flex;
+    justify-content: space-between;   
+    margin-top: 20px;
+
+}
+
+.calcularoIMC button:hover {    /*css para quando passar curso mudar a cor do botão  */
+ background-color: #3b7ec7;
+}
+
+div.calcularoIMC button {
+    background-color: #007bff; 
+    border: none;
+    color: #ffffff;
+    padding: 7px 14px; 
+    text-align: center;
+    text-decoration: none;
+    margin: 4px 2px;
+    border-radius: 12px;
+}
+
+.limparIMC,
+.calcularoIMC{
+    width: 69%;       /*largura dos botões*/
+}
+
+.DivAltura,
+.DivPeso{                     /*configurações de design dos inputs*/
+    background-color: #f5f5f5;
+   margin-bottom: 20px;
+   text-decoration-color: #f5f5f5;
+}
+
+.limparIMC button{
+    background-color: #dc3545;
+    color: #ffffff;
+    text-decoration: none;
+    border: none;
+    padding: 7px 14px;
+    text-align: center;
+    margin: 4px 2px;
+    border-radius: 12px;
+}
+
+
+.limparIMC button:hover {        /*css para quando passar curso mudar a cor do botão  */
+    background-color:  #cf5858;
+    width: 50%;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {            /*código css usado para tirar as setas que configuram o numero dos inputs ao clicar*/
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+.resultado {               /*css para estilo do result*/
+    background: #d4edda;
+    border-radius: 13px;
+    color: #333333;
+    }
+
+
+    .TabelaIMC{         /*abaixo personalização da tabela*/
+       background-color: #f5f5f5;
+       padding: 5px;
+       border-radius: 12px;
+       width: 50%;
+       float: right;
+       margin-left: 5%;
+        }
+
+        .TabelaIMC table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+    
+    
+    
+    table{
+        border-collapse: collapse;    /*borda de cálu mescladas*/
+        padding: 20px;
+        width: none;
+    }
+    th, td{
+        border: none;
+        padding: 8px;      /*espaço dentro de um elemento*/
+        text-align: left;
+    }
+    tbody{
+        text-align: left;
+            }
+    thead{
+        text-align: center;
+        color: #ffff00;
+        background-color: #007bff;
+    }
+    .text {
+        text-align: left;
+    }
+    .fimtext{
+        text-align: left;
+    }
+
+
+    a{                     /*persolazição do link para o vídeo esplicativo*/
+        text-decoration: none;
+        color: #007bff;
+    }
+
+    p{
+        color: #ffffff;
+    }
